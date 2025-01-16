@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  text-align: start;
+}
+
+.logo-image img {
+  height: 50px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.header-title {
+  font-family: 'Arial', sans-serif;
+ 
+  font-size: 24px;
+  color: #e67e22;
+  text-align: start;
+  justify-content: left;
+  margin-inline-start: 30px;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 40px; 
+  padding: 10px; 
+  font-weight: bold;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e67e22;
+  white-space: nowrap;
+  
+}
+
+header nav a:hover {
+  color: #d35400;
+}
+
+header .download-btn {
+  background-color: #d35400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+header .download-btn:hover {
+  background-color: #e67e22;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.fade-in {
+  opacity: 0; 
+  animation: fadeIn 1s ease-in-out forwards;
+}
