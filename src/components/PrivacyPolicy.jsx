@@ -3,15 +3,17 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>Privacy Policy</h1>
-      <p>Effective Date: 26th December 2024</p>
-      <p>
+     <h1 style={{ color: '#e67e22', textAlign: 'left' }}>Privacy Policy</h1>
+     <p style={{ textAlign: 'left', color: 'black' }}>
+       Effective Date: 26th December 2024
+       
+       <p style={{ textAlign: 'left', color: 'black' }}>
         Thank you for using Rice Reviews. Your privacy is important to us.
         This Privacy Policy outlines how we collect, use, and protect your
         personal information when you use our restaurant discovery app, which
         features a scrollable video interface and interactive map functionality.
-      </p>
-      <h2>1. Information We Collect</h2>
+      
+        <h2 style={{ textAlign: 'left', color: 'black' }}>1. Information We Collect</h2>
       <h3>1.1 Personal Information Provided by You:</h3>
       <ul>
         <li>Account details: Name, email address, username, and password.</li>
@@ -20,7 +22,7 @@ const PrivacyPolicy = () => {
           share.
         </li>
       </ul>
-      <h3>1.2 Automatically Collected Information:</h3>
+      <h3 style={{ textAlign: 'left', color: 'black' }}>1.2 Automatically Collected Information:</h3>
       <ul>
         <li>Location data: Precise location information to recommend nearby restaurants.</li>
         <li>
@@ -37,7 +39,7 @@ const PrivacyPolicy = () => {
       <ul>
         <li>Location: To provide personalized restaurant recommendations.</li>
         <li>
-Camera and Microphone: To enable video recording and uploads.
+       Camera and Microphone: To enable video recording and uploads.
         </li>
         <li>Storage: To save and upload content.</li>
       </ul>
@@ -63,30 +65,32 @@ Camera and Microphone: To enable video recording and uploads.
           requests.
         </li>
       </ul>
-      <h2>4. Your Choices and Controls</h2>
-      <p>You can manage or disable location services through your device settings.</p>
+      <h2 style={{ textAlign: 'left', color: 'black' }}>4. Your Choices and Controls</h2>
+      <p style={{ textAlign: 'left', color: 'black' }}>You can manage or disable location services through your device settings.</p>
       <h2>5. Data Security</h2>
-      <p>
+      <p style={{ textAlign: 'left', color: 'black' }}>
         We implement reasonable security measures to protect your information from
         unauthorized access, loss, or misuse.
       </p>
       <h2>6. Children's Privacy</h2>
-      <p>
+      <p style={{ textAlign: 'left', color: 'black' }}>
         The App is not intended for use by individuals under the age of 13. We do not
         knowingly collect personal information from children.
       </p>
       <h2>7. Changes to This Privacy Policy</h2>
-      <p>
+      <p style={{ textAlign: 'left', color: 'black' }}>
         We may update this Privacy Policy from time to time. Changes will be effective
         upon posting the updated policy in the App.
       </p>
       <h2>8. Contact Us</h2>
-      <p>
+      <p style={{ textAlign: 'left', color: 'black' }}>
         If you have any questions or concerns, please contact us at:
         <br />
         [Insert Company Name] <br />
         [Insert Address] <br />
         [Insert Contact Email]
+      </p>
+      </p>
       </p>
     </div>
   );

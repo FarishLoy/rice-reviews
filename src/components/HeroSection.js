@@ -33,34 +33,18 @@ function FoodGallery() {
 }
 
 
-// JavaScript to trigger fade-in animation on scroll
-document.addEventListener('DOMContentLoaded', () => {
-  const fadeElements = document.querySelectorAll('.fade-in');
 
-  const checkVisibility = () => {
-    fadeElements.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
-      const elementBottom = element.getBoundingClientRect().bottom;
 
-      // Check if the element is in the viewport
-      if (elementTop < window.innerHeight && elementBottom > 0) {
-        element.classList.add('fade-in-active');
-      }
-    });
-  };
 
-  // Run the check on page load and scroll
-  window.addEventListener('scroll', checkVisibility);
-  window.addEventListener('load', checkVisibility);
-});
+
 
 function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-content">
         <div className="first-section">
-            <h1>Your next favorite meal is just a scroll and a map pin away
-           <p>COMING SOON TO APP STORE SOON</p></h1>
+            <h1>Your next favorite meal is just a scroll and a map pin away</h1>
+           <p>COMING SOON TO APP STORE SOON</p>
             <div className="email-signup">
               <input type="email" placeholder="Enter email address" />
               <button>

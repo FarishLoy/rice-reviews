@@ -3,26 +3,7 @@ import "../styles/MapSection.css";
 import screenshot3 from "../screenshot3.png";
 
 
-// JavaScript to trigger fade-in animation on scroll
-document.addEventListener('DOMContentLoaded', () => {
-    const fadeElements = document.querySelectorAll('.fade-in');
-  
-    const checkVisibility = () => {
-      fadeElements.forEach((element) => {
-        const elementTop = element.getBoundingClientRect().top;
-        const elementBottom = element.getBoundingClientRect().bottom;
-  
-        // Check if the element is in the viewport
-        if (elementTop < window.innerHeight && elementBottom > 0) {
-          element.classList.add('fade-in-active');
-        }
-      });
-    };
-  
-    // Run the check on page load and scroll
-    window.addEventListener('scroll', checkVisibility);
-    window.addEventListener('load', checkVisibility);
-  });
+
 
 function MapSection() {
   return (
