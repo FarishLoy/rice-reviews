@@ -45,10 +45,15 @@
     border: 30px;
 }
 
+.hero-section .email-signup input[type="email"]::placeholder {
+    color: #DE9B97;
+  }
+
  .email-signup input[type="email"] {
     padding: 16px;
     width: 250px;
     border: 2px solid #921E17;
+    color: #DE9B97;
     border-radius: 5px;
 }
 
