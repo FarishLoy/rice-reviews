@@ -3,8 +3,7 @@
   flex-direction: row;
   justify-content: flex-start; 
   align-items: stretch; 
-  padding: 10px 10px;
-  background-color: #fffef8;
+  padding: 10px 10px #E3E3E3;
   margin-top: 100px;
 }
 
@@ -24,8 +23,8 @@
 .map-section h2 {
   
   font-size: 24px;
-  color: #e67e22;
-  margin-bottom: 10px;
+  color: #D36931;
+  margin-bottom: 15px;
   text-align: left;
   padding-left: 30px
   
@@ -35,10 +34,11 @@
 
 .map-section p {
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: left; 
-  line-height: 0.3; 
-  padding-left: 40px;
+  line-height: 0.3;
+  font-weight: bold; 
+  padding-left: 65px;
 }
 
 .map-section .screenshot-images {
@@ -46,14 +46,14 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  padding-right: 20px; 
+  padding-right: 40px; 
 }
 
 .map-section .screenshot-images img {
   width: 100%;
   max-width: 250px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4)); 
 }
 
 

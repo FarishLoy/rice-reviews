@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { useState, useEffect } from 'react';
 import reportWebVitals from './reportWebVitals';
+import { motion } from 'framer-motion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,11 @@ const NewApp = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    <motion.div
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+/>
 
     return () => {
       window.removeEventListener('scroll', handleScroll);

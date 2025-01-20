@@ -32,7 +32,7 @@ function VideoReviews() {
         <img src={screenshot2} alt="Video Review Screenshot" className="hero-image" />
       </div>
       <div className="video-description">
-        <h2>Video Reviews</h2>
+        <h2>Video reviews</h2>
         <p>Explore new restaurants through video reviews.</p>
         <p>Like and bookmark reviews to put the restaurant on your map.</p>
         <p>Select your favourite cuisines to see recommendations to your liking.</p>

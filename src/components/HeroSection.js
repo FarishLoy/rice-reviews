@@ -46,7 +46,7 @@ function HeroSection() {
             <h1>Your next favorite meal is just a scroll and a map pin away</h1>
            <p>COMING SOON TO APP STORE SOON</p>
             <div className="email-signup">
-              <input type="email" placeholder="Enter email address" />
+              <input type="email" placeholder="Email address" />
               <button>
               <ArrowForwardIcon /> 
             </button>

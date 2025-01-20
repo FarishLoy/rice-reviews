@@ -32,7 +32,7 @@ function Footer() {
       <div className="email-signup">
         <input
           type="email"
-          placeholder="Enter email address"
+          placeholder="Email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />

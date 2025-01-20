@@ -12,8 +12,8 @@
 .footer p {
     margin-top: 250px; 
     margin-bottom: 20px; 
-    font-size: 18px;
-    color: #e67e22;
+    font-size: 24px;
+    color: #D36931;
 
 
     
@@ -31,13 +31,13 @@
 .footer .email-signup input[type="email"] {
     padding: 16px;
     width: 250px;
-    border: 1px solid #ccc;
+    border: 2px solid #921E17;
     border-radius: 5px;
 }
 
 .footer .email-signup button {
-    background-color: #ae1100;
-    color: white;
+    background-color: #921E17;
+    color: E3E3E3;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -46,22 +46,27 @@
 }
 
 .footer .email-signup button:hover {
-    background-color: #e67e22;
+    background-color: #D36931;
 }
 
 .footer nav {
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     gap: 40px; 
-    margin-bottom: 5px; 
+    margin-bottom: 30px;
+    margin-top: 450px;
+
+
 }
 
 .footer nav a {
     text-decoration: none;
-    color: #e67e22;
+    color: #D36931;
 }
 
 .footer nav a:hover {
-    color: #d35400;
+    color: #D36931;
 }
 
 
