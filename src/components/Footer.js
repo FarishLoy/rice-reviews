@@ -8,6 +8,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 
+
 function Footer() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -26,7 +27,9 @@ function Footer() {
     }
   };
 
+
   return (
+  
     <footer className="footer">
       <p className="coming-soon">COMING TO APP STORE SOON</p>
       <div className="email-signup">
@@ -50,6 +53,7 @@ function Footer() {
         <Link to="/terms-of-service">Terms of Service</Link>
       </nav>
     </footer>
+
   );
 }
 

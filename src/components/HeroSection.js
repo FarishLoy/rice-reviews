@@ -3,6 +3,7 @@ import "../styles/HeroSection.css";
 import screenshot1 from "../screenshot1.png";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
+
 import food1 from '../food1.png';
 import food2 from '../food2.png';
 import food3 from '../food3.png'; 
@@ -18,19 +19,21 @@ import food12 from '../food12.png';
 
 function FoodGallery() {
     const foodImages = [
-        food1, food2,food3, food4, food5, food6, 
-        food7, food8, food9, food10, food11, food12,
-        
-    ];
+    food1, food2,food3, food4, food5, food6, 
+    food7, food8, food9, food10, food11, food12,
+    
+];
 
-    return (
-        <div className="food-gallery">
-                {foodImages.map((image, index) => (
-                    <img key={index} src={image} alt={`Food ${index + 6}`} />
-                ))}
-        </div>
-    );
+return (
+    <div className="food-gallery">
+            {foodImages.map((image, index) => (
+                <img key={index} src={image} alt={`Food ${index + 1}`} />
+            ))}
+    </div>
+    
+);
 }
+  
 
 
 
@@ -40,25 +43,28 @@ function FoodGallery() {
 
 function HeroSection() {
   return (
-    <section className="hero-section">
-      <div className="hero-content">
-        <div className="first-section">
-            <h1>Your next favorite meal is just a scroll and a map pin away</h1>
-           <p>COMING SOON TO APP STORE SOON</p>
-            <div className="email-signup">
-              <input type="email" placeholder="Email address"  />
-              <button>
-              <ArrowForwardIcon /> 
-            </button>
-            </div>   
-        <FoodGallery/>
-        </div>
-        <div className="screenshot-images second-section">
-            <img src={screenshot1} alt="Hero Section" className="hero-image" />
-        </div>
+   
+      <section className="hero-section">
+    <div className="hero-content">
+      <div className="first-section">
+          <h1>Your next favorite meal is just a scroll and a map pin away</h1>
+         <p>COMING SOON TO APP STORE SOON</p>
+          <div className="email-signup">
+            <input type="email" placeholder="Email address"  />
+            <button>
+            <ArrowForwardIcon /> 
+          </button>
+          </div>   
+      <FoodGallery/>
       </div>
-    </section>
-  );
+      <div className="screenshot-images second-section">
+          <img src={screenshot1} alt="Hero Section" className="hero-image" />
+      </div>
+    </div>
+  </section>
+
+);
+ 
 }
 
 export default HeroSection;

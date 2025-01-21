@@ -3,6 +3,7 @@ import "../styles/VideoReviews.css";
 import screenshot2 from "../screenshot2.png"; 
 
 
+
 // JavaScript to trigger fade-in animation on scroll
 document.addEventListener('DOMContentLoaded', () => {
   const fadeElements = document.querySelectorAll('.fade-in');
@@ -27,18 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function VideoReviews() {
   return (
-    <section className="video-reviews">
-      <div className="screenshot-images">
-        <img src={screenshot2} alt="Video Review Screenshot" className="hero-image" />
-      </div>
-      <div className="video-description">
-        <h2>Video reviews</h2>
-        <p>Explore new restaurants through video reviews.</p>
-        <p>Like and bookmark reviews to put the restaurant on your map.</p>
-        <p>Select your favourite cuisines to see recommendations to your liking.</p>
-      </div>
-      
-    </section>
+       <section className="video-reviews">
+    <div className="screenshot-images">
+      <img src={screenshot2} alt="Video Review Screenshot" className="hero-image" />
+    </div>
+    <div className="video-description">
+      <h2>Video reviews</h2>
+      <p>Explore new restaurants through video reviews.</p>
+      <p>Like and bookmark reviews to put the restaurant on your map.</p>
+      <p>Select your favourite cuisines to see recommendations to your liking.</p>
+    </div>
+    
+  </section>
+ 
+
   );
 }
 

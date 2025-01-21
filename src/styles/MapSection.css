@@ -5,6 +5,7 @@
   align-items: stretch; 
   padding: 10px 10px #E3E3E3;
   margin-top: 100px;
+  font-family: AppleLiGothic;
 }
 
 .map-section .text-content {
@@ -26,7 +27,7 @@
   color: #D36931;
   margin-bottom: 15px;
   text-align: left;
-  padding-left: 30px
+  padding-left: 10px
   
   
   
