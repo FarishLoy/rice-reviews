@@ -1,21 +1,21 @@
 import React from "react";
 import "../styles/HeroSection.css";
-import screenshot1 from "../screenshot1.png";
+import screenshot1 from "../assets/screenshot1.png";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
-import food1 from '../food1.png';
-import food2 from '../food2.png';
-import food3 from '../food3.png'; 
-import food4 from '../food4.png';
-import food5 from '../food5.png';
-import food6 from '../food6.png';
-import food7 from '../food7.png';
-import food8 from '../food8.png';
-import food9 from '../food9.png';
-import food10 from '../food10.png';
-import food11 from '../food11.png';
-import food12 from '../food12.png';
+import food1 from '../assets/food1.png';
+import food2 from '../assets/food2.png';
+import food3 from '../assets/food3.png'; 
+import food4 from '../assets/food4.png';
+import food5 from '../assets/food5.png';
+import food6 from '../assets/food6.png';
+import food7 from '../assets/food7.png';
+import food8 from '../assets/food8.png';
+import food9 from '../assets/food9.png';
+import food10 from '../assets/food10.png';
+import food11 from '../assets/food11.png';
+import food12 from '../assets/food12.png';
 
 function FoodGallery() {
     const foodImages = [

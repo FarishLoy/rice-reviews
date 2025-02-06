@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/VideoReviews.css";
-import screenshot2 from "../screenshot2.png"; 
+import screenshot2 from "../assets/screenshot2.png"; 
 
 
 

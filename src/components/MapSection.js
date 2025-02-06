@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/MapSection.css";
-import screenshot3 from "../screenshot3.png";
+import screenshot3 from "../assets/screenshot3.png";
 
 
 
