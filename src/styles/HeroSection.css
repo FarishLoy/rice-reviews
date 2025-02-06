@@ -116,7 +116,6 @@ p {
     height: 70px; 
     border-radius: 50%; 
     border: 1.5px solid rgb(193, 193, 193); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     object-fit: cover; 
     margin: 5px; 
   }
