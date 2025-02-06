@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/HeroSection.css";
 import screenshot1 from "../assets/screenshot1.png";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { useInView, motion, useMotionValue, useTime, animate } from 'framer-motion'
 
 
 import food1 from '../assets/food1.png';
@@ -33,18 +34,26 @@ return (
     
 );
 }
-  
-
-
-
-
-
 
 
 function HeroSection() {
+  const imageContainerRef = useRef(null)
+  
+  const isInView = useInView(imageContainerRef)
+  const opacity = useMotionValue(0)
+  
+  useEffect(() => {
+    if (isInView) {
+      const animation = animate(opacity, [0,1], { duration: 1.5 })
+      animation.play()
+    } else {
+      const animation = animate(opacity, [1,0], { duration: 1.5 })
+      animation.play()
+    }
+  }, [isInView])
   return (
    
-      <section className="hero-section">
+  <section className="hero-section">
     <div className="hero-content">
       <div className="first-section">
           <h1>Your next favorite meal is just a scroll and a map pin away</h1>
@@ -57,9 +66,9 @@ function HeroSection() {
           </div>   
       <FoodGallery/>
       </div>
-      <div className="screenshot-images second-section">
+      <motion.div style={{ opacity }} ref={imageContainerRef} className="screenshot-images second-section">
           <img src={screenshot1} alt="Hero Section" className="hero-image" />
-      </div>
+      </motion.div>
     </div>
   </section>
 
