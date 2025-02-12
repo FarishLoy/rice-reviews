@@ -1,46 +1,62 @@
 .video-reviews {
+  
     display: flex;
     flex-direction: row; 
     justify-content: space-between; 
-    align-items: center; 
-    padding: 200px;
-    border-radius: 8px;
-    margin: 20px;
+    align-items: center;     
     font-family: AppleLiGothic;
+    text-align: left;
+    
+    padding-right: 200px;
 }
 
 .video-reviews .screenshot-images {
     flex: 1; 
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: start; 
+    align-items: start;
+    padding-top: 100px;
+    padding-left: 175px;
+    
 }
 
 .video-reviews .screenshot-images img {
-    width: 100%;
-    max-width: 250px; 
-    border-radius: 8px;
+    width: 270px; 
+    height: auto; 
+    max-width: 100%; 
+    margin-top: 133px;
     filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4)); 
 }
 
-.video-reviews .video-description {
-    flex: 1; 
-    padding-left: 10px; 
-}
+
 
 .video-reviews h2 {
-    font-size: 1.5em;
+    font-size: 36px;
     color: #D36931;
-    margin-bottom: 20px;
     font-weight: bold;
-    text-align: start;
+    text-align: left;
+   
+    padding-bottom: 5px;    
+    margin-right: 100px;
+   
+
+
+   
+
 }
 
-.video-reviews p {
-    color: #555;
-    margin: 2px 0;
+.video-description p {
+    font-size: 14px;
+    color: #000000;
     font-weight: bold;
+    text-align: left;
+    line-height: 1.1;  
+    margin: 5px 0;
     
+    
+    
+   
 }
+
 
 

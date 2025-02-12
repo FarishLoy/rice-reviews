@@ -10,20 +10,25 @@ header {
 }
 
 .logo-image img {
-  height: 50px;
+  height: 60px;
   width: auto;
   border-radius: 10px;
+  margin-top: 18px;
+  margin-left: 30px;
 }
 
 .header-title {
   font-family: 'Arial', sans-serif;
  
-  font-size: 24px;
+  font-size: 30px;
   color: #D36931;
   text-align: start;
   justify-content: left;
-  margin-inline-start: 30px;
+  margin-inline-start: 22px;
   text-decoration: none;
+ 
+ 
+  
 }
 
 header nav {
@@ -37,7 +42,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   color: #D36931;
   white-space: nowrap;
   
@@ -53,7 +58,7 @@ header .download-btn {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 24px;
   cursor: pointer;
   font-weight: normal;
 }

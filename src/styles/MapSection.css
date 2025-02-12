@@ -22,24 +22,25 @@
 
 
 .map-section h2 {
-  
-  font-size: 24px;
+  font-size: 36px;
   color: #D36931;
-  margin-bottom: 15px;
-  text-align: left;
-  padding-left: 10px
+  padding-bottom: 10px;
+  text-align: start;
+  margin-left: 45px;
+  
+
   
   
   
 }
 
 .map-section p {
-  color: #555;
-  margin-bottom: 15px;
-  text-align: left; 
-  line-height: 0.3;
-  font-weight: bold; 
-  padding-left: 65px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  text-align: start;
+  line-height: 1.1;  
+  margin: 5px 0;
 }
 
 .map-section .screenshot-images {
@@ -51,10 +52,12 @@
 }
 
 .map-section .screenshot-images img {
-  width: 100%;
-  max-width: 250px;
+  width: 270px; 
+  height: auto; 
+  max-width: 100%; 
   border-radius: 10px;
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4)); 
+  margin-top: 233px;
 }
 
 

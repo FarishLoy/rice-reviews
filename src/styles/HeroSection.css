@@ -32,7 +32,7 @@
 }
 
 .hero-image {
-    width: 250px; 
+    width: 270px; 
     height: auto; 
     max-width: 100%;
 }
@@ -79,7 +79,7 @@ h1 {
     margin-top: 30px;
     margin-bottom: 20px;
      
-    font-size: 1.5em; 
+    font-size: 36px; 
     width: 100%; 
     grid-column: span 1;
     color: #D36931; 
@@ -88,7 +88,7 @@ h1 {
 p {
     color: #D36931; 
     font-family: Arial, sans-serif; 
-    font-size: 14px; 
+    font-size: 18px; 
     font-weight: normal; 
     font-style: normal; 
     line-height: 1.5;
@@ -97,8 +97,8 @@ p {
     text-transform: none; 
     letter-spacing: normal; 
     word-spacing: normal; 
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 33px;
+    margin-top: 14px;
 }
 
 .food-gallery {
@@ -123,6 +123,7 @@ p {
 .screenshot-images img {
     filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4)); 
     padding-top: 80px;
+    padding-right: 65px;
   }
 
  
