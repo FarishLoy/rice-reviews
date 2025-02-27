@@ -24,9 +24,9 @@
 .map-section h2 {
   font-size: 36px;
   color: #D36931;
-  padding-bottom: 10px;
+  
   text-align: start;
-  margin-left: 45px;
+ 
   
 
   
@@ -41,6 +41,7 @@
   text-align: start;
   line-height: 1.1;  
   margin: 5px 0;
+  margin-right: 60px;
 }
 
 .map-section .screenshot-images {
@@ -48,7 +49,7 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  padding-right: 40px; 
+   
 }
 
 .map-section .screenshot-images img {
@@ -57,7 +58,7 @@
   max-width: 100%; 
   border-radius: 10px;
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4)); 
-  margin-top: 233px;
+  margin-top: 313px;
 }
 
 

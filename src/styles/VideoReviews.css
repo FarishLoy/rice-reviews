@@ -15,8 +15,8 @@
     display: flex;
     justify-content: start; 
     align-items: start;
-    padding-top: 100px;
-    padding-left: 175px;
+    
+   
     
 }
 
@@ -24,7 +24,8 @@
     width: 270px; 
     height: auto; 
     max-width: 100%; 
-    margin-top: 133px;
+    margin-top: 313px;
+    margin-left: 133px;
     filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4)); 
 }
 
@@ -36,8 +37,9 @@
     font-weight: bold;
     text-align: left;
    
-    padding-bottom: 5px;    
-    margin-right: 100px;
+   
+        
+ 
    
 
 
@@ -52,6 +54,8 @@
     text-align: left;
     line-height: 1.1;  
     margin: 5px 0;
+    margin-right: 70px;
+    
     
     
     

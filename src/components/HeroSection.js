@@ -1,10 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { useInView, motion, useMotionValue, useTime, animate } from 'framer-motion'
+import { useInView, motion, useMotionValue, animate } from 'framer-motion';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "../styles/HeroSection.css";
 import screenshot1 from "../assets/screenshot1.png";
-
-
 
 import food1 from "../assets/food1.png";
 import food2 from "../assets/food2.png";
@@ -19,20 +17,12 @@ import food10 from "../assets/food10.png";
 import food11 from "../assets/food11.png";
 import food12 from "../assets/food12.png";
 
-  
-   
-
-
-
-
-
 const foodImages = [
   food1, food2, food3, food4, food5, food6,
   food7, food8, food9, food10, food11, food12
 ];
 
-
-function FoodGallery() {  
+function FoodGallery() {
   return (
     <div className="food-gallery">
       {foodImages.map((image, index) => (
@@ -42,51 +32,45 @@ function FoodGallery() {
   );
 }
 
-
 function HeroSection() {
-  const imageContainerRef = useRef(null)
-  const foodImagesRef = useRef(null)
+  const imageContainerRef = useRef(null);
+  const foodGalleryRef = useRef(null);
 
-  
-  const isInView = useInView(imageContainerRef , foodImagesRef)
-  const opacity = useMotionValue(0)
-  
+  const isInView = useInView(imageContainerRef, foodGalleryRef);
+  const opacity = useMotionValue(0);
+
   useEffect(() => {
     if (isInView) {
-      const animation = animate(opacity, [0,1], { duration: 1.5 })
-      animation.play()
+      const animation = animate(opacity, [0, 1], { duration: 1.5 });
+      animation.play();
     } else {
-      const animation = animate(opacity, [1,0], { duration: 1.5 })
-      animation.play() 
+      const animation = animate(opacity, [1, 0], { duration: 1.5 });
+      animation.play();
     }
-  }, [isInView]) 
+  }, [isInView]);
+
   return (
-   
-  <section className="hero-section">
-    <div className="hero-content">
-      <div className="first-section">
+    <section className="hero-section">
+      <div className="hero-content">
+        <div className="first-section">
           <h1>Your next favorite meal is just a scroll and a map pin away</h1>
-         <p>COMING SOON TO APP STORE SOON</p>
+          <p>COMING SOON TO APP STORE SOON</p>
           <div className="email-signup">
-            <input type="email" placeholder="Email address"  />
+            <input type="email" placeholder="Email address" />
             <button>
-            <ArrowForwardIcon /> 
-          </button>
-          </div>   
-      <FoodGallery/>
-      </div>
-      <motion.div style={{ opacity }} ref={imageContainerRef} className="screenshot-images second-section">
+              <ArrowForwardIcon />
+            </button>
+          </div>
+          <motion.div style={{ opacity }} ref={foodGalleryRef} className="food-gallery">
+            <FoodGallery />
+          </motion.div>
+        </div>
+        <motion.div style={{ opacity }} ref={imageContainerRef} className="screenshot-images second-section">
           <img src={screenshot1} alt="Hero Section" className="hero-image" />
-      </motion.div>
-      <motion.div style={{ opacity }} ref={foodImagesRef} className="food-gallery second-section">
-        {foodImagesRef.current && foodImages.map((image, index) => (
-          <img key={index} src={image} alt={`Food ${index + 1}`} className="food-images" />
-        ))}
-      </motion.div>
-    </div>
-  </section>
+        </motion.div>
+      </div>
+    </section>
   );
 }
 
 export default HeroSection;
-  
