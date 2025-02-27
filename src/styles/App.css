@@ -1,17 +1,11 @@
 .App {
   text-align: center;
-  font-family: AppleLiGothic;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-
-
-
-
 
 .App-header {
   background-color: #282c34;
@@ -21,10 +15,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 
 .App-link {
   color: #61dafb;
 }
-

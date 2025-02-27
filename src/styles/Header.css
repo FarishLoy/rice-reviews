@@ -6,7 +6,6 @@ header {
   background-color: white;
   border-bottom: 1px solid white;
   text-align: start;
-  font-family: AppleLiGothic;
 }
 
 .logo-image img {
@@ -18,34 +17,28 @@ header {
 }
 
 .header-title {
-  font-family: 'Arial', sans-serif;
-
   font-size: 30px;
-  color: #D36931;
+  color: #d36931;
   text-align: start;
   justify-content: left;
-  
+
   text-decoration: none;
- 
- 
-  
 }
 
 header nav {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
-  gap: 40px; 
-  padding: 10px; 
+  gap: 40px;
+  padding: 10px;
   font-weight: bold;
 }
 
 header nav a {
   text-decoration: none;
   font-size: 24px;
-  color: #D36931;
+  color: #d36931;
   white-space: nowrap;
-  
 }
 
 header nav a:hover {
@@ -53,7 +46,7 @@ header nav a:hover {
 }
 
 header .download-btn {
-  background-color: #D36931;
+  background-color: #d36931;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -64,7 +57,5 @@ header .download-btn {
 }
 
 header .download-btn:hover {
-  background-color: #D36931;
+  background-color: #d36931;
 }
-
-

@@ -1,79 +1,68 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    background-color: white;
-    font-family: AppleLiGothic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
 }
 
-
-
 .footer p {
-    margin-top: 250px; 
-    margin-bottom: 20px; 
-    font-size: 24px;
-    color: #D36931;
-
-
-    
-
+  margin-top: 250px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #d36931;
 }
 
 .footer .email-signup {
-    margin-bottom: 250px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
+  margin-bottom: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer .email-signup input[type="email"]::placeholder {
-    color: #DE9B97;
-  }
+.footer .email-signup input[type='email']::placeholder {
+  color: #de9b97;
+}
 
-.footer .email-signup input[type="email"] {
-    padding: 16px;
-    width: 250px;
-    border: 2px solid #921E17;
-    color: #DE9B97;
-    border-radius: 5px;
+.footer .email-signup input[type='email'] {
+  padding: 16px;
+  width: 250px;
+  border: 2px solid #921e17;
+  color: #de9b97;
+  border-radius: 5px;
 }
 
 .footer .email-signup button {
-    background-color: #921E17;
-    color: E3E3E3;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
+  background-color: #921e17;
+  color: E3E3E3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .footer .email-signup button:hover {
-    background-color: #D36931;
+  background-color: #d36931;
 }
 
 .footer nav {
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    gap: 40px; 
-    margin-bottom: 30px;
-    margin-top: 450px;
-
-
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+  margin-top: 450px;
 }
 
 .footer nav a {
-    text-decoration: none;
-    color: #D36931;
+  text-decoration: none;
+  color: #d36931;
 }
 
 .footer nav a:hover {
-    color: #D36931;
+  color: #d36931;
 }
-
-
