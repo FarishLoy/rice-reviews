@@ -22,7 +22,7 @@ function VideoReviews() {
   }, [isInView]);
 
   return (
-    <section className="video-reviews" style={{ backgroundColor: '#f7f7f7' }}>
+    <section className="video-reviews">
       <motion.div
         style={{ opacity }}
         ref={imageContainerRef}
