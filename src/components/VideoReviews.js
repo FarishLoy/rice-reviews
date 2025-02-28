@@ -16,7 +16,7 @@ function VideoReviews() {
       const animation = animate(opacity, [0, 1], { duration: 1.5 });
       animation.play();
     } else {
-      const animation = animate(opacity, [1, 0], { duration: 1.5 });
+      const animation = animate(opacity, [1, 0], { duration: 0.1 });
       animation.play();
     }
   }, [isInView]);
@@ -27,17 +27,16 @@ function VideoReviews() {
         style={{ opacity }}
         ref={imageContainerRef}
         className="screenshot-images second-section">
-        <img src={screenshot2} alt="Video Reviews" className="hero-image" />
+        <img src={screenshot2} alt="Video Reviews" />
       </motion.div>
-
-      <div className="video-description">
+      <motion.div style={{ opacity }} className="video-description">
         <h2>Video Reviews</h2>
         <p>Explore new restaurants through reviews.</p>
         <p>Like and bookmark reviews to put the restaurant on your map.</p>
         <p>
           Select your favorite cuisines to see recommendations to your liking.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }

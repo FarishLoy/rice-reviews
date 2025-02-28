@@ -1,27 +1,32 @@
 .video-reviews {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  text-align: left;
-
-  padding-right: 200px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .video-reviews .screenshot-images {
   flex: 1;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-reviews .screenshot-images img {
   width: 270px;
   height: auto;
   max-width: 100%;
-  margin-top: 313px;
-  margin-left: 133px;
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4));
+}
+
+.video-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
 }
 
 .video-reviews h2 {
@@ -32,7 +37,7 @@
 }
 
 .video-description p {
-  font-size: 14px;
+  font-size: 18px;
   color: #000000;
   font-weight: bold;
   text-align: left;

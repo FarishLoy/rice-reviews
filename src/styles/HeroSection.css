@@ -118,6 +118,4 @@ p {
 
 .screenshot-images img {
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4));
-  margin-top: 70px;
-  margin-right: 20px;
 }
