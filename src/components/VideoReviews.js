@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '../styles/VideoReviews.css';
+import '../styles/FeatureSection.css';
 import { useInView, motion, useMotionValue, animate } from 'framer-motion';
 import screenshot2 from '../assets/screenshot2.png';
 
@@ -22,19 +22,21 @@ function VideoReviews() {
   }, [isInView]);
 
   return (
-    <section className="video-reviews">
+    <section className="feature-container">
       <motion.div
         style={{ opacity }}
         ref={imageContainerRef}
         className="screenshot-images second-section">
         <img src={screenshot2} alt="Video Reviews" />
       </motion.div>
-      <motion.div style={{ opacity }} className="video-description">
+      <motion.div
+        style={{ opacity }}
+        className="description-container left-aligned">
         <h2>Video Reviews</h2>
-        <p>Explore new restaurants through reviews.</p>
-        <p>Like and bookmark reviews to put the restaurant on your map.</p>
+        <p>Explore new restaurants through reviews</p>
+        <p>Like and bookmark reviews to put the restaurant on your map</p>
         <p>
-          Select your favorite cuisines to see recommendations to your liking.
+          Select your favorite cuisines to see recommendations to your liking
         </p>
       </motion.div>
     </section>

@@ -1,4 +1,4 @@
-.video-reviews {
+.feature-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,42 +6,50 @@
   height: 100vh;
 }
 
-.video-reviews .screenshot-images {
+.feature-container .screenshot-images {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.video-reviews .screenshot-images img {
+.feature-container .screenshot-images img {
   width: 270px;
   height: auto;
   max-width: 100%;
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4));
 }
 
-.video-description {
+.description-container {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-  text-align: left;
 }
 
-.video-reviews h2 {
+.left-aligned {
+  text-align: left;
+  display: flex;
+}
+
+.right-aligned {
+  align-items: flex-end;
+  text-align: right;
+  display: flex;
+}
+
+.feature-container h2 {
   font-size: 36px;
   color: #d36931;
   font-weight: bold;
   text-align: left;
 }
 
-.video-description p {
+.description-container p {
   font-size: 18px;
   color: #000000;
   font-weight: bold;
   text-align: left;
   line-height: 1.1;
   margin: 5px 0;
-  margin-right: 70px;
 }
