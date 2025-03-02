@@ -9,6 +9,7 @@ function Footer() {
   const [message, setMessage] = useState('');
 
   const handleSignup = async () => {
+    console.log('email', email);
     if (!email) {
       setMessage('Please enter a valid email address.');
       return;

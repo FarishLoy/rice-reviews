@@ -14,34 +14,6 @@
   color: #d36931;
 }
 
-.footer .email-signup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer .email-signup input[type='email']::placeholder {
-  color: #de9b97;
-}
-
-.footer .email-signup input[type='email'] {
-  padding: 16px;
-  width: 250px;
-  border: 2px solid #921e17;
-  color: #de9b97;
-  border-radius: 5px;
-}
-
-.footer .email-signup button {
-  background-color: #921e17;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
 .footer .email-signup button:hover {
   background-color: #d36931;
 }

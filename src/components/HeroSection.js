@@ -1,32 +1,47 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from 'react';
 import { useInView, motion, useMotionValue, animate } from 'framer-motion';
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import "../styles/HeroSection.css";
-import screenshot1 from "../assets/screenshot1.png";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import '../styles/HeroSection.css';
+import screenshot1 from '../assets/screenshot1.png';
 
-import food1 from "../assets/food1.png";
-import food2 from "../assets/food2.png";
-import food3 from "../assets/food3.png";
-import food4 from "../assets/food4.png";
-import food5 from "../assets/food5.png";
-import food6 from "../assets/food6.png";
-import food7 from "../assets/food7.png";
-import food8 from "../assets/food8.png";
-import food9 from "../assets/food9.png";
-import food10 from "../assets/food10.png";
-import food11 from "../assets/food11.png";
-import food12 from "../assets/food12.png";
+import food1 from '../assets/food1.png';
+import food2 from '../assets/food2.png';
+import food3 from '../assets/food3.png';
+import food4 from '../assets/food4.png';
+import food5 from '../assets/food5.png';
+import food6 from '../assets/food6.png';
+import food7 from '../assets/food7.png';
+import food8 from '../assets/food8.png';
+import food9 from '../assets/food9.png';
+import food10 from '../assets/food10.png';
+import food11 from '../assets/food11.png';
+import food12 from '../assets/food12.png';
 
 const foodImages = [
-  food1, food2, food3, food4, food5, food6,
-  food7, food8, food9, food10, food11, food12
+  food1,
+  food2,
+  food3,
+  food4,
+  food5,
+  food6,
+  food7,
+  food8,
+  food9,
+  food10,
+  food11,
+  food12,
 ];
 
 function FoodGallery() {
   return (
     <div className="food-gallery">
       {foodImages.map((image, index) => (
-        <img key={index} src={image} alt={`Food ${index + 1}`} className="hero-image" />
+        <img
+          key={index}
+          src={image}
+          alt={`Food ${index + 1}`}
+          className="hero-image"
+        />
       ))}
     </div>
   );
@@ -36,7 +51,9 @@ function HeroSection() {
   const imageContainerRef = useRef(null);
   const foodGalleryRef = useRef(null);
 
-  const isInView = useInView(imageContainerRef, foodGalleryRef);
+  const isInView = useInView(imageContainerRef, {
+    amount: 0.5,
+  });
   const opacity = useMotionValue(0);
 
   useEffect(() => {
@@ -61,11 +78,17 @@ function HeroSection() {
               <ArrowForwardIcon />
             </button>
           </div>
-          <motion.div style={{ opacity }} ref={foodGalleryRef} className="food-gallery">
+          <motion.div
+            style={{ opacity }}
+            ref={foodGalleryRef}
+            className="food-gallery">
             <FoodGallery />
           </motion.div>
         </div>
-        <motion.div style={{ opacity }} ref={imageContainerRef} className="screenshot-images second-section">
+        <motion.div
+          style={{ opacity }}
+          ref={imageContainerRef}
+          className="screenshot-images second-section">
           <img src={screenshot1} alt="Hero Section" className="hero-image" />
         </motion.div>
       </div>

@@ -28,7 +28,7 @@
 }
 
 .hero-image {
-  width: 270px;
+  width: 320px;
   height: auto;
   max-width: 100%;
 }
@@ -42,18 +42,19 @@
   border: 30px;
 }
 
-.hero-section .email-signup input[type='email']::placeholder {
+.email-signup input[type='email']::placeholder {
   color: #de9b97;
   margin-left: 26.5px;
+  font-size: 16px;
 }
 
 .email-signup input[type='email'] {
   padding: 16px;
-  width: 250px;
+  width: 360px;
   border: 2px solid #921e17;
   color: #de9b97;
-  border-radius: 5px;
-  margin-left: 26.5px;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 .email-signup button {
@@ -61,7 +62,7 @@
   color: #e3e3e3;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
 }
@@ -70,18 +71,16 @@
   background-color: #d36931;
 }
 
-h1 {
+.hero-section h1 {
   margin-top: 30px;
   margin-bottom: 20px;
-  margin-left: 25px;
-
   font-size: 33px;
   width: 100%;
   grid-column: span 1;
   color: #d36931;
 }
 
-p {
+.hero-section p {
   color: #d36931;
   font-size: 18px;
   font-weight: normal;
@@ -94,7 +93,6 @@ p {
   word-spacing: normal;
   margin-bottom: 33px;
   margin-top: 14px;
-  margin-left: 26.5px;
 }
 
 .food-gallery {

@@ -16,7 +16,7 @@ function VideoReviews() {
       const animation = animate(opacity, [0, 1], { duration: 1.5 });
       animation.play();
     } else {
-      const animation = animate(opacity, [1, 0], { duration: 0.1 });
+      const animation = animate(opacity, [1, 0], { duration: 1.5 });
       animation.play();
     }
   }, [isInView]);
