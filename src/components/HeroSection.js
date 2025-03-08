@@ -49,44 +49,62 @@ function FoodGallery() {
 
 function HeroSection() {
   const imageContainerRef = useRef(null);
-  const foodGalleryRef = useRef(null);
+  const firstSectionRef = useRef(null);
 
-  const isInView = useInView(imageContainerRef, {
+  const isSecondSectionInView = useInView(imageContainerRef, {
     amount: 0.5,
   });
-  const opacity = useMotionValue(0);
+  const isFirstSectionInView = useInView(firstSectionRef, {
+    amount: 0.5,
+  });
+
+  const firstSectionOpacity = useMotionValue(0);
+  const secondSectionOpacity = useMotionValue(0);
 
   useEffect(() => {
-    if (isInView) {
-      const animation = animate(opacity, [0, 1], { duration: 1.5 });
+    if (isSecondSectionInView) {
+      const animation = animate(secondSectionOpacity, [0, 1], {
+        duration: 1.5,
+      });
       animation.play();
     } else {
-      const animation = animate(opacity, [1, 0], { duration: 1.5 });
+      const animation = animate(secondSectionOpacity, [1, 0], {
+        duration: 1.5,
+      });
       animation.play();
     }
-  }, [isInView]);
+  }, [isSecondSectionInView]);
+
+  useEffect(() => {
+    if (isFirstSectionInView) {
+      const animation = animate(firstSectionOpacity, [0, 1], { duration: 1.5 });
+      animation.play();
+    } else {
+      const animation = animate(firstSectionOpacity, [1, 0], { duration: 1.5 });
+      animation.play();
+    }
+  }, [isFirstSectionInView]);
 
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <div className="first-section">
+        <div className="first-section" ref={firstSectionRef}>
           <h1>Your next favorite meal is just a scroll and a map pin away</h1>
           <p>COMING SOON TO APP STORE SOON</p>
           <div className="email-signup">
             <input type="email" placeholder="Email address" />
             <button>
-              <ArrowForwardIcon />
+              <ArrowForwardIcon style={{ fontWeight: 'bolder' }} />
             </button>
           </div>
           <motion.div
-            style={{ opacity }}
-            ref={foodGalleryRef}
+            style={{ opacity: firstSectionOpacity }}
             className="food-gallery">
             <FoodGallery />
           </motion.div>
         </div>
         <motion.div
-          style={{ opacity }}
+          style={{ opacity: secondSectionOpacity }}
           ref={imageContainerRef}
           className="screenshot-images second-section">
           <img src={screenshot1} alt="Hero Section" className="hero-image" />

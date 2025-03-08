@@ -53,3 +53,31 @@ header .download-btn {
 header .download-btn:hover {
   background-color: #d36931;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  header nav {
+    gap: 20px;
+    display: none;
+  }
+
+  header .download-btn {
+    padding: 10px 15px;
+  }
+
+  .header-title {
+    font-size: 20px;
+    color: #d36931;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .logo-image img {
+    height: 35px;
+    width: auto;
+    border-radius: 10px;
+  }
+}

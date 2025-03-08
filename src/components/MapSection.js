@@ -21,7 +21,13 @@ function MapSection() {
   }, [isInView]);
 
   return (
-    <section className="feature-container">
+    <section className="feature-container-reversed">
+      <motion.div
+        style={{ opacity }}
+        ref={imageContainerRef}
+        className="screenshot-images second-section">
+        <img src={screenshot3} alt="Video Reviews" />
+      </motion.div>
       <motion.div
         style={{ opacity }}
         className="description-container right-aligned">
@@ -29,12 +35,6 @@ function MapSection() {
         <p>Explore restaurants on the map</p>
         <p>Filter by price levels, cuisine, and restaurants</p>
         <p>rated by your following</p>
-      </motion.div>
-      <motion.div
-        style={{ opacity }}
-        ref={imageContainerRef}
-        className="screenshot-images second-section">
-        <img src={screenshot3} alt="Video Reviews" />
       </motion.div>
     </section>
   );

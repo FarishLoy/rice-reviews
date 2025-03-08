@@ -1,9 +1,3 @@
-.hero-section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .first-section {
   display: flex;
   padding-top: 60px;
@@ -36,8 +30,6 @@
 .email-signup {
   margin-bottom: 50px;
   display: flex;
-  justify-content: left;
-  align-items: left;
   gap: 10px;
   border: 30px;
 }
@@ -46,10 +38,11 @@
   color: #de9b97;
   margin-left: 26.5px;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .email-signup input[type='email'] {
-  padding: 16px;
+  padding: 4px 10px;
   width: 360px;
   border: 2px solid #921e17;
   color: #de9b97;
@@ -98,10 +91,10 @@
 .food-gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 20px;
   columns: 6;
-  column-gap: 8px;
-  row-gap: 13px;
+  column-gap: 20px;
+  row-gap: 20px;
+  column-count: 6;
 }
 
 .food-gallery img {
@@ -110,10 +103,90 @@
   border-radius: 50%;
   border: 1.5px solid #e3e3e3;
   object-fit: cover;
-  margin: 5px;
-  margin-top: 15px;
 }
 
 .screenshot-images img {
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4));
+}
+
+@media only screen and (max-width: 768px) {
+  .first-section {
+    display: flex;
+    padding: 0px 20px 0 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .second-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    padding-top: 0px;
+  }
+
+  .hero-section h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #d36931;
+  }
+
+  .food-gallery img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid #e3e3e3;
+    object-fit: cover;
+    margin: 5px;
+    margin-top: 15px;
+  }
+
+  .email-signup input[type='email'] {
+    padding: 4px 10px;
+    border: 2px solid #921e17;
+    color: #de9b97;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .food-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    columns: 6;
+    column-gap: 4px;
+    row-gap: 13px;
+    justify-content: center;
+    align-items: center;
+    columns: 6;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .email-signup {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 10px;
+    border: 30px;
+    width: 100%;
+  }
 }
