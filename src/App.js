@@ -9,6 +9,7 @@ import './styles/App.css';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
 import ExploreSection from './components/ExploreSection';
+import { Web } from '@mui/icons-material';
 
 const Homepage = () => {
   return (
@@ -21,19 +22,24 @@ const Homepage = () => {
   );
 };
 
+export const WebsiteContext = React.createContext();
+
 function App() {
+  const [subscribed, setSubscribed] = React.useState(false);
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/" element={<Homepage />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <WebsiteContext.Provider value={{ subscribed, setSubscribed }}>
+      <Router>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/" element={<Homepage />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </WebsiteContext.Provider>
   );
 }
 

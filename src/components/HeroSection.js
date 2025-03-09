@@ -17,6 +17,7 @@ import food9 from '../assets/food9.png';
 import food10 from '../assets/food10.png';
 import food11 from '../assets/food11.png';
 import food12 from '../assets/food12.png';
+import { WebsiteContext } from '../App';
 
 const foodImages = [
   food1,
@@ -49,6 +50,11 @@ function FoodGallery() {
 }
 
 function HeroSection() {
+  const [email, setEmail] = React.useState('');
+  const [error, setError] = React.useState('');
+
+  const { subscribed, setSubscribed } = React.useContext(WebsiteContext);
+
   const imageContainerRef = useRef(null);
   const firstSectionRef = useRef(null);
 
@@ -86,20 +92,38 @@ function HeroSection() {
     }
   }, [isFirstSectionInView]);
 
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubscribe = () => {
+    if (email === '') {
+      setError('Email cannot be empty');
+      return;
+    }
+    setSubscribed(true);
+  };
+
   return (
     <section className="hero-section" id="Home">
       <div className="hero-content">
         <div className="first-section" ref={firstSectionRef}>
           <h1>Your next favorite meal is just a scroll and a map pin away</h1>
           <p>COMING SOON TO APP STORE SOON</p>
-          <div className="email-signup">
+          <div className={`email-signup ${subscribed ? 'subscribed' : ''}`}>
             <input
               autoComplete="email"
               type="email"
               placeholder="Email address"
+              value={email}
+              onChange={handleEmailChange}
             />
-            <button>
-              <ArrowForwardIcon style={{ fontWeight: 'bolder' }} />
+            <button onClick={handleSubscribe}>
+              {subscribed ? (
+                "You're subscribed!"
+              ) : (
+                <ArrowForwardIcon style={{ fontWeight: 'bolder' }} />
+              )}
             </button>
           </div>
           <motion.div

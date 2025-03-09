@@ -30,8 +30,8 @@
 .email-signup {
   margin-bottom: 50px;
   display: flex;
-  gap: 10px;
   border: 30px;
+  width: 80%;
 }
 
 .email-signup input[type='email']::placeholder {
@@ -41,23 +41,87 @@
   font-weight: 500;
 }
 
+@keyframes expandButton {
+  0% {
+    color: #e3e3e3;
+  }
+  0.01% {
+    color: rgba(146, 30, 23, 0);
+  }
+  99.99% {
+    color: rgba(146, 30, 23, 0);
+  }
+  100% {
+    color: #e3e3e3;
+    cursor: default;
+  }
+}
+
+@keyframes shrinkOut {
+  0% {
+    opacity: 1;
+    flex: 1;
+    width: 100%;
+  }
+  99.999% {
+    border-width: 2px;
+    padding: 0px;
+    flex: 0;
+  }
+  100% {
+    padding: 0px;
+    border-width: 0px;
+    color: '#fff';
+    opacity: 0;
+    margin-right: 0px;
+    display: none;
+    width: 0%;
+  }
+}
+
 .email-signup input[type='email'] {
   padding: 4px 10px;
-  width: 360px;
   border: 2px solid #921e17;
   color: #de9b97;
   border-radius: 10px;
   font-size: 16px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.subscribed input[type='email'] {
+  padding: 4px 10px;
+  border: 2px solid #921e17;
+  color: #de9b97;
+  border-radius: 10px;
+  font-size: 16px;
+  animation: shrinkOut 0.5s forwards;
+  width: 100%;
 }
 
 .email-signup button {
   background-color: #921e17;
   color: #e3e3e3;
   padding: 10px 20px;
-  border: none;
   border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
+  text-wrap: nowrap;
+  border: none;
+  min-width: fit-content;
+  flex: 1;
+}
+
+.subscribed button {
+  background-color: #921e17;
+  color: #e3e3e3;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-wrap: nowrap;
+  animation: expandButton 0.5s forwards;
+  flex: 1;
 }
 
 .email-signup button:hover {
@@ -152,6 +216,24 @@
     margin-top: 15px;
   }
 
+  @keyframes expandButton {
+    0% {
+      width: 0%;
+      color: '#e3e3e3';
+    }
+    0.01% {
+      color: '#921e17';
+    }
+    99.99% {
+      color: '#921e17';
+    }
+    100% {
+      width: 100%;
+      color: '#e3e3e3';
+      cursor: default;
+    }
+  }
+
   .email-signup input[type='email'] {
     padding: 4px 10px;
     border: 2px solid #921e17;
@@ -159,6 +241,19 @@
     border-radius: 10px;
     font-size: 16px;
     width: 100%;
+    margin-right: 0px;
+  }
+
+  .subscribed button {
+    background-color: #921e17;
+    color: #e3e3e3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-wrap: nowrap;
+    animation: expandButton 1s forwards;
   }
 
   .hero-image {

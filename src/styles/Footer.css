@@ -34,3 +34,7 @@
 .footer nav a:hover {
   color: #d36931;
 }
+
+.footer .email-signup {
+  width: 30%;
+}
