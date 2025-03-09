@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef } from 'react';
 import { useInView, motion, useMotionValue, animate } from 'framer-motion';
 import screenshot3 from '../assets/screenshot3.png';
