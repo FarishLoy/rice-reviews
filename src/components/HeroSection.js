@@ -86,13 +86,17 @@ function HeroSection() {
   }, [isFirstSectionInView]);
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="Home">
       <div className="hero-content">
         <div className="first-section" ref={firstSectionRef}>
           <h1>Your next favorite meal is just a scroll and a map pin away</h1>
           <p>COMING SOON TO APP STORE SOON</p>
           <div className="email-signup">
-            <input type="email" placeholder="Email address" />
+            <input
+              autoComplete="email"
+              type="email"
+              placeholder="Email address"
+            />
             <button>
               <ArrowForwardIcon style={{ fontWeight: 'bolder' }} />
             </button>

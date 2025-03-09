@@ -16,13 +16,13 @@ function Header() {
         <div className="logo-image">
           <img src={logoImage} alt="Rice Reviews Logo" />
         </div>
-        <Link to="/" className="header-title">
+        <a href="/" className="header-title">
           Rice Reviews
-        </Link>
+        </a>
       </div>
       <nav>
-        <Link to="#home">Home</Link>
-        <Link to="#about">About Us</Link>
+        <a href="#Home">Home</a>
+        <a href="#About">About Us</a>
       </nav>
     </header>
   );

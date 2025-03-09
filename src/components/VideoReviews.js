@@ -22,7 +22,7 @@ function VideoReviews() {
   }, [isInView]);
 
   return (
-    <section className="feature-container">
+    <section className="feature-container" id="About">
       <motion.div
         style={{ opacity }}
         ref={imageContainerRef}

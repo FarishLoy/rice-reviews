@@ -43,10 +43,9 @@ function Footer() {
       </div>
       {message && <p>{message}</p>}
       <nav>
-        <Link to="/about-us">About Us</Link>
-        <Link to="/privacy-policy">Privacy Policy</Link>
-
-        <Link to="/terms-of-service">Terms of Service</Link>
+        <a href="/about-us">About Us</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
       </nav>
     </footer>
   );
