@@ -1,0 +1,12 @@
+.privacy-container {
+  padding: 40px;
+  margin: 30px;
+  font-family: 'Arial, sans-serif';
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-container {
+    padding: 15px;
+    margin: 10px;
+  }
+}
