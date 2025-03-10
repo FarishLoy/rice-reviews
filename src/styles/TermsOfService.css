@@ -1,0 +1,26 @@
+.terms-container {
+  padding: 40px;
+  margin: 30px;
+  font-family: 'Arial, sans-serif';
+  text-align: left;
+}
+
+.terms-container h1 {
+  font-size: 28px;
+  color: #d36931;
+  font-weight: bold;
+  text-align: left;
+}
+
+.terms-container h2 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .terms-container {
+    padding: 10px 15px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    font-family: 'Arial, sans-serif';
+  }
+}
