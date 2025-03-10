@@ -38,3 +38,23 @@
 .footer .email-signup {
   width: 30%;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer nav {
+    gap: 20px;
+  }
+
+  .footer .email-signup {
+    width: 100%;
+  }
+
+  .footer nav a {
+    text-decoration: none;
+    color: #d36931;
+    font-size: 14px;
+  }
+}
