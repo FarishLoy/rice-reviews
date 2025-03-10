@@ -70,25 +70,25 @@ function HeroSection() {
 
   useEffect(() => {
     if (isSecondSectionInView) {
-      const animation = animate(secondSectionOpacity, [0, 1], {
+      const animation = animate(secondSectionOpacity, 1, {
         duration: 1.5,
       });
       animation.play();
     } else {
-      const animation = animate(secondSectionOpacity, [1, 0], {
-        duration: 1.5,
-      });
-      animation.play();
+      //const animation = animate(secondSectionOpacity, [1, 0], {
+      //  duration: 1.5,
+      //});
+      //animation.play();
     }
   }, [isSecondSectionInView]);
 
   useEffect(() => {
     if (isFirstSectionInView) {
-      const animation = animate(firstSectionOpacity, [0, 1], { duration: 1.5 });
+      const animation = animate(firstSectionOpacity, 1, { duration: 1.5 });
       animation.play();
     } else {
-      const animation = animate(firstSectionOpacity, [1, 0], { duration: 1.5 });
-      animation.play();
+      //const animation = animate(firstSectionOpacity, [1, 0], { duration: 1.5 });
+      //animation.play();
     }
   }, [isFirstSectionInView]);
 
