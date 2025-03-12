@@ -53,6 +53,7 @@ function FoodGallery() {
 function HeroSection() {
   const [email, setEmail] = React.useState('');
   const [error, setError] = React.useState('');
+  const [loading, setLoading] = React.useState(false);
 
   const { subscribed, setSubscribed } = React.useContext(WebsiteContext);
 
@@ -103,6 +104,8 @@ function HeroSection() {
       return;
     }
 
+    setLoading(true);
+
     try {
       const response = await axios.post(
         'https://api.ricereviews.com/email/subscribe',
@@ -123,6 +126,8 @@ function HeroSection() {
         err.response?.data?.message || 'An error occurred. Please try again.'
       );
     }
+
+    setLoading(false);
   };
 
   return (
@@ -131,21 +136,24 @@ function HeroSection() {
         <div className="first-section" ref={firstSectionRef}>
           <h1>Your next favorite meal is just a scroll and a map pin away</h1>
           <p>COMING SOON TO APP STORE SOON</p>
-          <div className={`email-signup ${subscribed ? 'subscribed' : ''}`}>
-            <input
-              autoComplete="email"
-              type="email"
-              placeholder="Email address"
-              value={email}
-              onChange={handleEmailChange}
-            />
-            <button onClick={handleSignup}>
-              {subscribed ? (
-                "You're subscribed!"
-              ) : (
-                <ArrowForwardIcon style={{ fontWeight: 'bolder' }} />
-              )}
-            </button>
+          <div style={{ width: '100%' }}>
+            <div className={`email-signup ${subscribed ? 'subscribed' : ''}`}>
+              <input
+                autoComplete="email"
+                type="email"
+                placeholder="Email address"
+                value={email}
+                onChange={handleEmailChange}
+              />
+              <button disabled={loading} onClick={handleSignup}>
+                {subscribed ? (
+                  "You're subscribed!"
+                ) : (
+                  <ArrowForwardIcon style={{ fontWeight: 'bolder' }} />
+                )}
+              </button>
+            </div>
+            <p>{error ? error : ''}</p>
           </div>
           <motion.div
             style={{ opacity: firstSectionOpacity }}

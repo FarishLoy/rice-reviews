@@ -28,7 +28,6 @@
 }
 
 .email-signup {
-  margin-bottom: 50px;
   display: flex;
   border: 30px;
   width: 80%;
@@ -110,6 +109,20 @@
   border: none;
   min-width: fit-content;
   flex: 1;
+}
+
+.email-signup button:disabled {
+  background-color: #921e17;
+  color: #e3e3e3;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-wrap: nowrap;
+  border: none;
+  min-width: fit-content;
+  flex: 1;
+  opacity: 0.5;
 }
 
 .subscribed button {
@@ -278,7 +291,6 @@
   }
 
   .email-signup {
-    margin-bottom: 50px;
     display: flex;
     gap: 10px;
     border: 30px;

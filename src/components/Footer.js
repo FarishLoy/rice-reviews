@@ -7,6 +7,7 @@ import { WebsiteContext } from '../App';
 function Footer() {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const { subscribed, setSubscribed } = React.useContext(WebsiteContext);
 
@@ -15,6 +16,8 @@ function Footer() {
       setError('Please enter a valid email address.');
       return;
     }
+
+    setLoading(true);
 
     try {
       const response = await axios.post(
@@ -36,6 +39,8 @@ function Footer() {
         err.response?.data?.message || 'An error occurred. Please try again.'
       );
     }
+
+    setLoading(false);
   };
 
   return (
@@ -48,7 +53,7 @@ function Footer() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <button onClick={handleSignup}>
+        <button disabled={loading} onClick={handleSignup}>
           {subscribed ? (
             "You're subscribed!"
           ) : (
