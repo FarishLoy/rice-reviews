@@ -18,6 +18,7 @@ import food10 from '../assets/food10.png';
 import food11 from '../assets/food11.png';
 import food12 from '../assets/food12.png';
 import { WebsiteContext } from '../App';
+import axios from 'axios';
 
 const foodImages = [
   food1,
@@ -96,12 +97,32 @@ function HeroSection() {
     setEmail(e.target.value);
   };
 
-  const handleSubscribe = () => {
-    if (email === '') {
-      setError('Email cannot be empty');
+  const handleSignup = async () => {
+    if (!email) {
+      setError('Please enter a valid email address.');
       return;
     }
-    setSubscribed(true);
+
+    try {
+      const response = await axios.post(
+        'https://api.ricereviews.com/email/subscribe',
+        {
+          email,
+        }
+      );
+
+      if (response.status === 200) {
+        setSubscribed(true);
+      } else {
+        setError(
+          response.data.message || 'An error occurred. Please try again.'
+        );
+      }
+    } catch (err) {
+      setError(
+        err.response?.data?.message || 'An error occurred. Please try again.'
+      );
+    }
   };
 
   return (
@@ -118,7 +139,7 @@ function HeroSection() {
               value={email}
               onChange={handleEmailChange}
             />
-            <button onClick={handleSubscribe}>
+            <button onClick={handleSignup}>
               {subscribed ? (
                 "You're subscribed!"
               ) : (

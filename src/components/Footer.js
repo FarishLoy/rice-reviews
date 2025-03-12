@@ -11,18 +11,26 @@ function Footer() {
   const { subscribed, setSubscribed } = React.useContext(WebsiteContext);
 
   const handleSignup = async () => {
-    console.log('email', email);
     if (!email) {
       setError('Please enter a valid email address.');
       return;
     }
 
-    setSubscribed(true);
-
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
-        email,
-      });
+      const response = await axios.post(
+        'https://api.ricereviews.com/email/subscribe',
+        {
+          email,
+        }
+      );
+
+      if (response.status === 200) {
+        setSubscribed(true);
+      } else {
+        setError(
+          response.data.message || 'An error occurred. Please try again.'
+        );
+      }
     } catch (err) {
       setError(
         err.response?.data?.message || 'An error occurred. Please try again.'
@@ -48,6 +56,7 @@ function Footer() {
           )}
         </button>
       </div>
+      <p>{error}</p>
       <nav>
         <a href="/about-us">About Us</a>
         <a href="/privacy-policy">Privacy Policy</a>
