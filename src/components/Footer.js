@@ -63,7 +63,7 @@ function Footer() {
       </div>
       <p>{error}</p>
       <nav>
-        <a href="/about-us">About Us</a>
+        <a href="/#About">About Us</a>
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="/terms-of-service">Terms of Service</a>
       </nav>
