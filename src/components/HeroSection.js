@@ -134,8 +134,8 @@ function HeroSection() {
     <section className="hero-section" id="Home">
       <div className="hero-content">
         <div className="first-section" ref={firstSectionRef}>
-          <h1>Your next favorite meal is just a scroll and a map pin away</h1>
-          <p>COMING SOON TO APP STORE SOON</p>
+          <h1>Your next favorite meal is just a scroll away</h1>
+          <p>COMING SOON TO APP STORE</p>
           <div style={{ width: '100%' }}>
             <div className={`email-signup ${subscribed ? 'subscribed' : ''}`}>
               <input
