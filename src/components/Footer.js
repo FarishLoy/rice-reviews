@@ -45,7 +45,7 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <p className="coming-soon">COMING TO APP STORE</p>
+      <p className="coming-soon">COMING SOON TO APP STORE</p>
       <div className={`email-signup ${subscribed ? 'subscribed' : ''}`}>
         <input
           type="email"
