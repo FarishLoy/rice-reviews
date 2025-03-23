@@ -90,7 +90,7 @@ const TermsOfService = () => {
         <br />
         [Insert Address]
         <br />
-        Email: [Insert Contact Email]
+        Email: contact@ricereviews.com
       </p>
       <p>By using the App, you agree to these Terms of Service.</p>
     </main>

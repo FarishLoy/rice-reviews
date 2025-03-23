@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
         <br />
         Rice Reviews LLC <br />
         [Insert Address] <br />
-        [Insert Contact Email]
+        contact@ricereviews.com
       </p>
     </div>
   );
