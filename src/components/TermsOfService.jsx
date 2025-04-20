@@ -76,7 +76,14 @@ const TermsOfService = () => {
         damages.
       </p>
       <h2>10. Governing Law</h2>
-      <p>These Terms are governed by the laws of [Jurisdiction].</p>
+      <p>
+        These Terms are governed by and construed in accordance with the laws of
+        the State of New York, United States, without regard to its conflict of
+        law provisions. You agree to submit to the exclusive jurisdiction of the
+        courts located in New York County, New York, for the resolution of any
+        disputes arising out of or relating to these Terms or the use of the
+        App.
+      </p>
       <h2>11. Changes to These Terms</h2>
       <p>
         We may update these Terms from time to time. Your continued use of the
