@@ -101,7 +101,8 @@ const PrivacyPolicy = () => {
         If you have any questions or concerns, please contact us at:
         <br />
         Rice Reviews LLC <br />
-        [Insert Address] <br />
+        800 N King Street Suite 304 2918 Wilmington, DE 19801 United States{' '}
+        <br />
         contact@ricereviews.com
       </p>
     </div>

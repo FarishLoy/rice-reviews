@@ -88,7 +88,7 @@ const TermsOfService = () => {
         <br />
         Rice Reviews LLC
         <br />
-        [Insert Address]
+        800 N King Street Suite 304 2918 Wilmington, DE 19801 United States
         <br />
         Email: contact@ricereviews.com
       </p>
