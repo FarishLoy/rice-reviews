@@ -31,7 +31,7 @@ function MapSection() {
       </motion.div>
       <motion.div
         style={{ opacity }}
-        className="description-container right-aligned">
+        className="description-container-reversed right-aligned">
         <h2>Restaurants On Map</h2>
         <p>Explore restaurants on the map</p>
         <p>Filter by price levels, cuisine, and restaurants</p>
