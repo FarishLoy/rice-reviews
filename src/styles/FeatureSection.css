@@ -28,6 +28,11 @@
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4));
 }
 
+.feature-container .screenshot-images img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 .feature-container-reversed .screenshot-images {
   flex: 1;
   display: flex;
@@ -40,6 +45,11 @@
   height: auto;
   max-width: 100%;
   filter: drop-shadow(6px 6px 4px rgba(0.4, 0.4, 0.4, 0.4));
+}
+
+.feature-container-reversed .screenshot-images img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .description-container {
